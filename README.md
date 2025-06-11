@@ -42,3 +42,9 @@ Training: Python &amp; Django - Advanced
     ```bash
     docker-compose up
     ```
+
+# Build Django app steps
+
+```bash
+docker-compose run --rm app sh -c "python manage.py startapp core"
+```
