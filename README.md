@@ -22,9 +22,14 @@ Training: Python &amp; Django - Advanced
         pip install pre-commit
         // add file .pre-commit-config.yaml
         pre-commit install
+        // install linter locally
+        pip install black
     ```
-
-4. Run tests locally
+4. Run linter locally
+   ```bash
+    >> black [file or directory]
+    ```
+5. Run tests locally
     ```bash
     cd app
     python manage.py test
@@ -33,7 +38,7 @@ Training: Python &amp; Django - Advanced
     docker-compose run --rm app sh -c "python manage.py test"
     ```
 
-5. Start local server
+6. Start local server
     ```bash
     docker-compose up
     ```
