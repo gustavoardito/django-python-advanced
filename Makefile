@@ -16,3 +16,5 @@ superuser:
 	 docker-compose run --rm app sh -c "python manage.py createsuperuser"
 setup-user:
 	 docker-compose run --rm app sh -c "python manage.py startapp user"
+setup-recipe:
+	 docker-compose run --rm app sh -c "python manage.py startapp recipe"
