@@ -14,3 +14,5 @@ migrations:
 	 docker-compose run --rm app sh -c "python manage.py makemigrations"
 superuser:
 	 docker-compose run --rm app sh -c "python manage.py createsuperuser"
+setup-user:
+	 docker-compose run --rm app sh -c "python manage.py startapp user"
